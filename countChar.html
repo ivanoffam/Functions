@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        var str = prompt("Input your text for looking for char 'B'");
+        var char = prompt("Input your char for looking for");
+        alert(countBs(str, char));
+
+        function countBs(str, char)
+        {
+            var count = 0;
+            var len = str.length;
+
+            for(i = 0; i < len; i++)
+            {
+                if(str.charAt(i) === char)
+                    count++;
+            }
+            return count;
+        }
+    </script>
+
+</body>
+</html>

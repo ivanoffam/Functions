@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt("Input your number for checking on even"));
+        alert(isEven(num));
+
+        function isEven(num)
+        {
+           if(num == 0)
+           {
+               return true;
+           }
+            else if(num == 1)
+           {
+               return false;
+           }
+
+           var diff = num - 2;
+           return isEven(diff);
+        }
+    </script>
+
+</body>
+</html>

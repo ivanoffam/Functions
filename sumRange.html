@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        var start = Number(prompt("Input start of range"));
+        var end = Number(prompt("Input end of range"));
+        var step = Number(prompt("Input step of range"));
+        alert( sum(range(start, end, step)) );
+
+        function range(start, end, step)
+        {
+            var arr = [];
+            if(!step)
+                step = 1;
+
+            for(i = start; i <= end; i += step)
+            {
+                arr.push(i);
+            }
+            return arr;
+        }
+
+        function sum(arr) {
+            var res = 0;
+
+            arr.forEach(function(item, i, arr) {
+                res += item;
+            });
+
+            return res;
+        }
+    </script>
+
+</body>
+</html>
